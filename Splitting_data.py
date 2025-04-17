@@ -27,13 +27,14 @@ def analyze_and_split_dataset(filepath, dataset_name, label_column, test_size=0.
     print(f"Validation set size: {len(val_data)}")
     print(f"Test set size: {len(test_data)}")
     return train_data, val_data, test_data
-# Replace with your file paths and label column names
+
+#giving file path
 heart_filepath = "dataset/heart.csv"
 diabetes_filepath = "dataset/diabetes.csv"
 
-heart_label_column = "target"  # Replace with your heart dataset's label column
-diabetes_label_column = "Outcome"  # Replace with your diabetes dataset's label column
+heart_label_column = "target"  
+diabetes_label_column = "Outcome"  
 
-# Call the dataset split function and store results
+# Calling the dataset split function and store results
 heart_train, heart_val, heart_test = analyze_and_split_dataset(heart_filepath, "Heart", heart_label_column)
 diabetes_train, diabetes_val, diabetes_test = analyze_and_split_dataset(diabetes_filepath, "Diabetes", diabetes_label_column)

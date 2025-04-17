@@ -61,6 +61,6 @@ def svm_disease_classifier(train_data, val_data, test_data, label_column, datase
     except Exception as e:
         print(f"Error during SVM classification for {dataset_name}: {e}")
 
-# Call the function with train, validation, and test data
+# Calling the function with train, validation, and test data
 svm_disease_classifier(heart_train, heart_val, heart_test, "target", "Heart Disease")
 svm_disease_classifier(diabetes_train, diabetes_val, diabetes_test, "Outcome", "Diabetes")
